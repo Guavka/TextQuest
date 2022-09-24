@@ -9,6 +9,7 @@ public class Action
 {
     public string Description;
     public byte Index;
+    public AudioClip ClickClip;
 }
 
 [Serializable]
@@ -18,6 +19,7 @@ public class Room
     public Action[] Actions;
 
     public Texture BG;
+    public AudioClip Clip;
 }
 
 public class TextQuest : MonoBehaviour
@@ -40,6 +42,12 @@ public class TextQuest : MonoBehaviour
 
     [SerializeField]
     private RawImage _background;
+
+    [SerializeField]
+    private AudioSource _bgAudio;
+
+    [SerializeField]
+    private AudioSource _clickAudio;
 
     /*
      Структура описания комнаты
@@ -76,6 +84,9 @@ public class TextQuest : MonoBehaviour
             _actionTexts[i].text = currentRoomActions[i].Description;
             _actionButtons[i].gameObject.SetActive(true);
         }
+
+        _bgAudio.clip = currentRoom.Clip;
+        _bgAudio.Play();
     }
 
     private void EndGame()
@@ -95,7 +106,10 @@ public class TextQuest : MonoBehaviour
 
     private void OnActionButton(byte index)
     {
-        _currentIndex = _roomInfo[_currentIndex].Actions[index].Index;
+        var currentAction = _roomInfo[_currentIndex].Actions[index];
+
+        _currentIndex = currentAction.Index;
+        _clickAudio.PlayOneShot(currentAction.ClickClip);
 
         if (_currentIndex >= _roomInfo.Length)
             EndGame();
