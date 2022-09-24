@@ -16,6 +16,8 @@ public class Room
 {
     public string Description;
     public Action[] Actions;
+
+    public Texture BG;
 }
 
 public class TextQuest : MonoBehaviour
@@ -35,6 +37,9 @@ public class TextQuest : MonoBehaviour
 
     [SerializeField]
     private TMP_Text[] _actionTexts;
+
+    [SerializeField]
+    private RawImage _background;
 
     /*
      Структура описания комнаты
@@ -59,6 +64,7 @@ public class TextQuest : MonoBehaviour
         var currentRoomActions = currentRoom.Actions;
 
         _roomDesc.text = currentRoom.Description;
+        _background.texture = currentRoom.BG;
 
         for (var i = 0; i < _actionButtons.Length; i++)
         {

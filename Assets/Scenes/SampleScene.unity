@@ -736,6 +736,7 @@ MonoBehaviour:
   - {fileID: 1917122597}
   - {fileID: 1755416245}
   - {fileID: 98948436}
+  _background: {fileID: 1354231599}
   _roomInfo:
   - Description: "0. \u0412\u044B \u043F\u0440\u043E\u0441\u043D\u0443\u043B\u0438\u0441\u044C
       \u0432 \u043A\u043E\u043C\u043D\u0430\u0442\u0435"
@@ -745,6 +746,7 @@ MonoBehaviour:
     - Description: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C
         \u0441\u043F\u0430\u0442\u044C"
       Index: 0
+    BG: {fileID: 2800000, guid: 94ecf336a3b598b47911f4771929b1ff, type: 3}
   - Description: "1. \u0412\u044B \u043E\u0441\u043C\u043E\u0442\u0440\u0435\u043B\u0438
       \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u0438 \u043D\u0430\u0448\u043B\u0438
       \u0437\u0430\u043F\u0438\u0441\u043A\u0443. \u0412 \u043D\u0435\u0439 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u0441\u044F
@@ -754,11 +756,13 @@ MonoBehaviour:
       Index: 2
     - Description: "\u041B\u0435\u0447\u044C \u0441\u043F\u0430\u0442\u044C"
       Index: 0
+    BG: {fileID: 2800000, guid: 94ecf336a3b598b47911f4771929b1ff, type: 3}
   - Description: "2. \u0412\u044B \u043F\u043E\u0434\u043E\u0448\u043B\u0438 \u043A
       \u0434\u0432\u0435\u0440\u0438"
     Actions:
     - Description: "\u041F\u043E\u0437\u0432\u0430\u0442\u044C \u0441\u0442\u0440\u0430\u0436\u043D\u0438\u043A\u0430"
       Index: 3
+    BG: {fileID: 2800000, guid: 4e231fdb7a5fedb4eabc20fe96c9f21b, type: 3}
   - Description: "3. \u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A \u043D\u0435\u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
       \u043F\u0440\u0438\u0442\u043E\u043F\u0430\u043B \u043A \u0432\u0430\u0448\u0435\u0439
       \u0434\u0432\u0435\u0440\u0438. \"\u0427\u0442\u043E \u0442\u0435\u0431\u0435
@@ -770,12 +774,14 @@ MonoBehaviour:
       Index: 5
     - Description: "\u0412\u044B\u043F\u0443\u0441\u0442\u0438 \u043C\u0435\u043D\u044F!"
       Index: 4
+    BG: {fileID: 2800000, guid: c0eb04bd39972334d8e90d2540ca31a8, type: 3}
   - Description: "4. \u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A \u0440\u0430\u0441\u0441\u043C\u0435\u044F\u043B\u0441\u044F
       \u0438 \u0443\u0442\u043E\u043F\u0430\u043B \u0432\u043E \u0442\u044C\u043C\u0443"
     Actions:
     - Description: "\u0421\u043D\u043E\u0432\u0430 \u043F\u043E\u0437\u0432\u0430\u0442\u044C
         \u0435\u0433\u043E"
       Index: 3
+    BG: {fileID: 2800000, guid: c0eb04bd39972334d8e90d2540ca31a8, type: 3}
   - Description: "5. \"-\u041E\u0442\u043A\u0443\u0434\u0430 \u0442\u044B \u0437\u043D\u0430\u0435\u0448\u044C
       \u044D\u0442\u043E \u0438\u043C\u044F?\" \u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A
       \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442 \u043F\u043B\u0430\u043A\u0430\u0442\u044C
@@ -783,6 +789,7 @@ MonoBehaviour:
     Actions:
     - Description: "\u0412\u044B\u0439\u0442\u0438 \u0438\u0437 \u043A\u0430\u043C\u0435\u0440\u044B"
       Index: 6
+    BG: {fileID: 2800000, guid: 7de45318a75f6534eb416b29235a27f8, type: 3}
   _currentIndex: 0
 --- !u!4 &730611631
 Transform:
@@ -1251,7 +1258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 94ecf336a3b598b47911f4771929b1ff, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7de45318a75f6534eb416b29235a27f8, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1266,6 +1273,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354231597}
   m_CullTransparentMesh: 1
+--- !u!1 &1377172175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377172177}
+  - component: {fileID: 1377172176}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1377172176
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377172175}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4bcedf6a9ef32be45b27fe7a69fa2d55, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1377172177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377172175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 472.85205, y: 130.6907, z: -86.771996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750035402
 GameObject:
   m_ObjectHideFlags: 0
